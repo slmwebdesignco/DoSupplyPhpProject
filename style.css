@@ -1,0 +1,125 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"Roboto";
+  display: flex;
+  margin-top:100px;
+  justify-content: center;
+  height:100vh;
+  background: #000000;;
+}
+
+h1 {
+  padding:16px;
+  margin-bottom: 20px;
+  font-size:30px;
+  color:rgb(250, 250, 250);
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Form Styles */
+.main-form {
+  background:#1880e2;
+  padding:32px 20px;
+  border-radius: 20px;
+  box-shadow: -2px -3px 15px 5px blue, 2px 3px 15px 5px red;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom:28px;
+}
+
+.do-input {
+  width:400px;
+  height:48px;
+  padding:0 20px;
+  font-size:20px;
+  border:0;
+  border-radius: 5px;
+}
+
+.do-text {
+  padding:10px 20px;
+  height:100px;
+  width:100%;
+  font-family:"Roboto";
+  font-size:20px;
+}
+
+.do-input:focus {
+  outline:none;
+}
+
+label {
+  position: absolute;
+  font-size:18px;
+  color:#aaa;
+  transition: all .4s;
+  top:24px;
+  transform:translateY(-50%);
+  margin-left:24px;
+  cursor:text;
+  z-index: 1;
+}
+
+/* Button Styles */
+.do-button {
+  width:100%;
+  height:60px;
+  font-size:20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border:0;
+  color:white;
+  background:#000d1d;
+  transition:.4s;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 20px;
+}
+
+.do-button:hover {
+  background:rgb(0, 0, 0)!important; 
+  transform: translateY(-10%);
+  color: #FF0100!important;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+  outline: none;
+}
+
+.do-button:active {
+        background: #e5e5e5;
+        -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+        -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+        box-shadow: inset 0px 0px 5px #c1c1c1;
+        outline: none;
+      }
+
+.form-status {
+  padding:8px;
+  text-align: center;
+  color:white;
+  margin-top:8px;
+  margin-bottom:-24px;
+}
+
+/* Class that is added and removed with Javascript to create field tag animation */
+.slide-up {
+  margin-top:-32px;
+  margin-left:0px;
+  font-size:14px;
+  background:#ff0000;
+  border-radius:8px 0;
+  color:white;
+  padding:4px 8px;
+  min-width:100px;
+}
